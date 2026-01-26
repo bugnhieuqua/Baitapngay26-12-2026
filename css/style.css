@@ -1,0 +1,149 @@
+
+body {
+  font-family: "Arima", system-ui;
+  background: #e0c5e0;
+  padding: 0px 50px 0px 50px;
+}
+h1{
+    font-size: 20pt;
+    font-weight: bold;
+    color:rgba(218, 21, 47, 0.993);
+    margin: 40px;
+    text-align: center;
+}
+.header{
+    width: 100%;
+}
+.topleft{
+    background: #aec73f;
+    height: 100px;
+    width: 100px;
+    float:left;
+    padding: 10px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+.topleft img{
+    border-radius: 50px;
+    height: 100%;
+    
+}
+.topright{
+    background: #000099;
+    height: 100px;
+    margin: 0 0 0 10px;
+    background-image: url('../img/banner.png');
+    padding: 10px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.yellowtext{
+    color:rgba(218, 215, 21, 0.993);
+}
+/* .topnav{
+    width: 100%;
+    height: 50px;
+}
+.navbar{
+    background: #a9b1bb;
+    float: left;
+    width: 100%;
+    height:50px;
+    padding: 0;
+    list-style: none;
+}
+.navbar li{
+    display: inline;
+}
+.navbar li a{
+    background: #094383;
+    float:left;
+    padding: 15px 15px;
+    color:#ffffff;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    background: #ffff00;
+    color:red;
+} */
+ .topnav {
+    width: 100%;
+    background: #333;
+    height: 50px;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar li a:hover {
+    background: #ffff00;
+    color: red;
+}
+
+.maincontent{
+    margin: 0;
+    padding:20px;
+}
+.maincontent h2{
+    color: #370bd8;
+}
+.textJustify{
+    text-align: justify;
+    padding: 5px;
+}
+.rightImg{
+    float:right;
+    width: 500px;
+    right:500px;
+    padding-left: 10px;
+    margin-left: 20%;
+}
+.leftImg{
+    float:left;
+    width: 500px;
+    right:500px;
+    padding-right: 10px;
+    
+}
+.clear{
+    clear: both;
+}
+.footer{
+    background: #094383;
+    margin-top: 200px;
+    padding: 15px;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+

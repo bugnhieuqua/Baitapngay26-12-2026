@@ -1,0 +1,234 @@
+/* Reset và base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: ghostwhite;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #C00; /* Màu đỏ đậm giống hình */
+    padding: 20px 0;
+    border-bottom: 5px solid #900;
+    position: relative;
+}
+
+.header h1 {
+    
+    color: aliceblue;
+    text-align: left; /* Tiêu đề căn trái */
+    margin: 0;
+    padding: 20px 40px 20px 11%;
+    font-size: 50px;
+    letter-spacing: 2px;
+    float: left; /* Để tiêu đề nổi bên trái */
+}
+
+.topnav {
+    width: auto; /* Không chiếm full width */
+    background: none; /* Bỏ nền đen */
+    height: 50px;
+    position: absolute;
+    right: 40px; /* Đẩy sang phải */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa chính xác */
+}
+
+.navbar {
+    width: auto;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Căn sang phải */
+    align-items: center;
+    background: none; /* Bỏ nền đen */
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 5px; /* Khoảng cách giữa các item */
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    /* background: rgba(0, 0, 0, 0.3);  */
+    /* Nền trong suốt đen nhẹ */
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.navbar li a:hover {
+    background: #312f31;
+    color: rgb(72, 255, 0);
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.left-column h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #C00;
+    padding-bottom: 10px;
+}
+
+.left-column p {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 16px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #C00;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #900;
+}
+
+
+.right-column {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.right-column h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #C00;
+    padding-bottom: 10px;
+}
+
+.categories {
+    list-style: none;
+}
+
+.categories li {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.categories li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.categories li a {
+    color: #C00;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.categories li a:hover {
+    color: #900;
+    text-decoration: underline;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-box {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-box h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #C00;
+    padding-bottom: 10px;
+}
+
+.feature-box p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.feature-link {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.feature-link:hover {
+    background: #C00;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 5px solid #C00;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
